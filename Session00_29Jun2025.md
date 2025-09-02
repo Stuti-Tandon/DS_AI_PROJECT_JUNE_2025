@@ -17,6 +17,7 @@
    5. Making predictions or decisions (using machine learning models)
 - Data scientists use tools like Python, R, SQL, and platforms like Jupyter, Pandas, and scikit-learn to do this work.
 - The goal is often to help businesses or organizations make better, data-driven decisions.
+
  <img width="586" height="545" alt="image" src="https://github.com/user-attachments/assets/e9a7ccdc-670a-4e70-94ba-a056237ac753" />
 
  
@@ -31,4 +32,35 @@
 3. **Inference Phase**: It happens after training. The model uses the learned parameters (weights and biases) to make predictions on new, unseen data.
 4. Weights (W): Weights determine how strongly each input feature influences the output. Higher weights mean the feature has a stronger influence on the prediction.
 5. Bias (b): Bias helps the model make predictions even when the input is zero. It allows the model to shift the output, making the model more flexible and accurate.
+<br>
+Example:
+### 🔢 Given Data (Training Examples):
+ x = 1, y = 3
+ x = 3, y = 5
+ Goal: Predict y when x = 5
+1. **Model**
+The model assumes a linear relationship between x and y:
+y = W.x + b
+This is the equation the model tries to learn.
+
+2. **Training Phase**
+We want to find values of **W (weight)** and **b (bias)** that best fit the training data.
+#### Step 1: Use two known points
+* Point A: (x_1 = 1, y_1 = 3)
+* Point B: (x_2 = 3, y_2 = 5)
+#### Step 2: Find **slope (W)**
+W =(y_2 - y_1)/(x_2 - x_1) = {5 - 3}/{3 - 1} = 1
+#### Step 3: Plug one point into the equation to find **b**
+Using y = W.x + b and point A:
+b= 2
+### ✅ Learned Model:
+y = 1.x + 2
+### 3. **Inference Phase**
+Now we use the learned model to **predict y for a new x**:
+x = 5 ,y=7
+### 4. **Weights (W)**
+* W = 1: Each unit increase in x increases y by 1.
+### 5. **Bias (b)**
+* b = 2: Even if x = 0, the model predicts y = 2
+
  
