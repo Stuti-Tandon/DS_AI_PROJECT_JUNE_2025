@@ -7,7 +7,7 @@
 1. Scientific methods  
 2. Processes  
 3. Algorithm  
-4. Systems  
+4. Systems
    to extract knowledge and insights from many structured and unstructured data.
  - It involves the entire process of:
    1. Collecting data (from databases, APIs, sensors, etc.)
